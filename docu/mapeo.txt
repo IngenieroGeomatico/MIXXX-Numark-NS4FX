@@ -1,0 +1,241 @@
+Panel superior:
+
+[ ] 1. Perilla de navegación: Gire la perilla para recorrer las carpetas y las pistas. Cuando seleccione una
+carpeta, pulse la perilla para entrar a la misma.
+Mantenga presionada la tecla Shift y gire la perilla para desplazarse rápidamente por las pistas y
+carpetas.
+
+[ ] 2.Load: Pulse uno de estos botones cuando haya una pista seleccionada para agregarla a la bandeja
+izquierda o derecha activa. Pulse dos veces un botón de carga rápidamente para asignar la misma
+pista a ambas bandejas activas.
+
+[ ] 3.Level: Ajusta el nivel de audio previo al fader y al ecualizador del canal correspondiente en el software.
+
+[ ] 4.Ecualización de agudos: Permite controlar las frecuencias de agudos de los canales individuales.
+
+[ ] 5.Ecualización de medios: Permite controlar las frecuencias de la gama media de los canales individuales.
+
+[ ] 6.Ecualización de graves: Permite controlar las frecuencias de graves de los canales individuales.
+
+[ ] 7.Filtro: Esta perilla permite ajustar el valor del filtro. Girándola a izquierda y derecha se produce un
+filtro pasa-bajos y un filtro pasa-altos, respectivamente.
+
+[ ] 8.Cue de auriculares: Envía el audio prefader (previo al atenuador) al canal de cue para monitorización
+con auriculares.
+
+[ ] 9.Fader de canal: Permite ajustar el volumen de los canales individuales en el software.
+
+[ ] 10.Cue Gain: Permite ajustar el volumen del cue por los auriculares.
+
+[ ] 11.Cue Mix: Permite ajustar la salida de audio a los auriculares, mezclando la salida para cue y la salida
+de mezcla maestra.
+
+[ ] 12.LED de salida principal: Muestra el nivel de audio que sale por la salida principal.
+
+[ ] 13.Crossfader: Permite controlar la combinación entre las dos bandejas.
+
+[ ] 14.Perilla FX Wet/Dry: Gire esta perilla para ajustar la mezcla "con efectos" / "sin efectos".
+
+[ ] 15.Multiplicador de beats: Se utiliza para aumentar y disminuir la velocidad del ciclo del efecto en
+beats. Cuando se usa un efecto basado en el tiempo, con esta perilla se ajusta su división de tiempo.
+
+[ ] 16.Ajuste de BPM: Pulse este botón 4 veces o más para introducir manualmente los nuevos BPM. El
+software ignorará los BPM de la pista y seguirá el tempo que usted introdujo manualmente.
+Pulse Shift y este botón para reiniciar el tempo a los BPM predeterminados de la bandeja.
+
+[ ] 17. Software FX: presione uno de estos botones para seleccionar un efecto de software.
+•HPF (filtro de paso alto)•Eco
+•LPF (filtro de paso bajo)•Reverberación
+•Flanger•Phaser18.Activar / Desactivar / Sostener FX (efectos): Mueva el interruptor conmutador hacia arriba para
+trabar (bloquear) los efectos en la posición de activación. Mueva el interruptor conmutador hacia
+abajo para activar los efectos momentáneamente. Cuando el interruptor se encuentre en la posición
+intermedia, los efectos estarán apagados.
+
+[ ] 18.Activar / Desactivar / Sostener FX (efectos): Mueva el interruptor conmutador hacia arriba para
+trabar (bloquear) los efectos en la posición de activación. Mueva el interruptor conmutador hacia
+abajo para activar los efectos momentáneamente. Cuando el interruptor se encuentre en la posición
+intermedia, los efectos estarán apagados.
+
+[ ] 19.Layer: Pulse este botón para seleccionar la capa del software que se controla con esa bandeja del
+hardware. La bandeja A puede controlar las bandejas virtuales 1 ó 3. La bandeja B puede controlar las
+bandejas virtuales 2 ó 4.
+
+[ ] 20.Plato/rueda de avance por pasos: Esta rueda de avance por pasos capacitiva y sensible al tacto
+controla el audio cuando se toca y se mueve la rueda. Cuando el botón Scratch no está activo, use la
+rueda para variar el pitch de la pista. Cuando el botón Scratch está activo, use la rueda para capturar
+y mover el audio, "rayando" la pista como lo haría con un disco de vinilo. También puede tomar la
+rueda externa insensible al tacto para variar el pitch de la pista.
+
+[ ] 21.Pantalla: Use esta pantalla para ver la información relacionada con la pista actual. Consulte
+Características > Pantalla para más información.
+
+[ ] 22.Shift (Función secundaria): Permite disparar varios comandos de control cuando se pulsan primero
+junto con otros botones.
+
+[ ] 23.Scratch: presione este botón para activar la función scratch de la rueda de selección.
+
+[ ] 24.Fader de pitch: Controla la velocidad de la música. Al moverlo hacia el "+" se acelera la música y al
+moverlo hacia el "–" se reduce su velocidad.
+
+[ ] 25.Inflexión de tono hacia abajo: Manténgalo pulsado para reducir la velocidad de la pista
+momentáneamente.
+
+[ ] 26.Inflexión de tono hacia arriba: Manténgalo pulsado para aumentar la velocidad de la pista
+momentáneamente.
+Presione Shift y mueva la rueda para buscar rápidamente el audio de la pista.
+Mantenga pulsado Shift y este botón para ajustar el rango del fader de tono.
+Mantenga pulsado Shift y este botón para activar o desactivar el bloqueo de teclas.
+
+[ ] 27.Sync (Sincronización): Pulse este botón para hacer coincidir automáticamente el tempo de la
+bandeja correspondiente con el tempo de la bandeja opuesta. Pulse Shift y pulse este botón para
+desactivar el sincronismo.
+
+[ ] 28.Cue (control de transporte): Se utiliza para establecer y recuperar el punto de cue principal en la
+pista actual. Mantenga pulsado el botón Cue para reproducir temporalmente el punto de cue. La pista
+se reproduce mientras el botón se mantiene pulsado y retorna al punto de cue cuando se suelta.
+Pulse Shift + Cue para regresar el cabezal de reproducción al comienzo de la pista.
+
+[ ] 29.Reproducir/Pausa: Se utiliza para iniciar y suspender la reproducción.
+
+[ ] 30.Pads de actuaciones en vivo: Estos pads tienen distintas funciones en cada bandeja en función del
+modo de pad activo. Consulte Funcionamiento > Modos de pad para actuaciones para aprender a
+utilizar los pads en cada modo, como se describe a continuación.
+Con Serato DJ Lite, la fila inferior de pads se utiliza para disparar efectos de tartamudeo, pista
+anterior y búsqueda hacia atrás y hacia adelante.
+•Tartamudeo: Repite o hace tartamudear a la muestra cuando el pad se toca repetidamente.
+•Pista anterior: Regresa a la pista anterior.
+•Búsqueda hacia atrás: Recorre la pista actual hacia atrás.
+•Búsqueda hacia adelante: Recorre la pista actual hacia adelante.
+•Bucle activado / desactivado: presione para activar / desactivar el bucle automático.
+Mantenga presionada la tecla Shift y presione este botón para activar una reloop.
+Con Serato DJ Pro, los cuatro pads inferiores también se pueden utilizar para el modo de pad
+seleccionado.
+
+[ ] 31. Cue / Pitch Play: Pulse este botón para entrar al modo Cue. Pulse el botón una segunda vez para
+entrar al modo de reproducción de tono.
+Nota: El plugin Pitch N Time de Serato (no incluido) es necesario para poder usar el modo de
+reproducción de tono.
+
+[ ] 32. Auto Loop / Roll: Pulse este botón para entrar al modo de bucle automático. Pulse este botón una
+segunda vez para entrar al modo de redoble (Serato DJ Pro solamente).
+
+[ ] 33.Fader Cuts / Slicer: Pulse este botón para entrar al modo de cortes de fader. Pulse este botón una
+segunda vez para entrar al modo cortador (Serato DJ Pro solamente).
+
+[ ] 34.Sampler / Scratch Banks: Pulse este botón para entrar al modo muestreador ("sampler"). Pulse
+este botón una segunda vez para entrar al modo de banco de rayado (Serato DJ Pro solamente).
+
+[ ] 35.Loop On/Off: Pulse este botón para activar/desactivar el bucle automático. Mantenga pulsado Shift y
+pulse este botón para disparar una repetición del bucle.
+
+[ ] 36.Bucle 1/2: presione este botón cuando haya un bucle activo para disminuir el tamaño del bucle a la
+mitad. Mantenga presionada la tecla Shift y presione este botón para establecer el punto de entrada
+del bucle.
+
+[ ] 37.Bucle x2: presione este botón cuando haya un bucle activo para duplicar el tamaño del bucle.
+Mantenga presionada la tecla Shift y presione este botón para establecer el punto de salida de bucle.
+
+[ ] 38.Interruptor Mic 1/Línea: Ajuste este interruptor a la posición adecuada, en función del dispositivo
+conectado a la entrada Mic 1. Si está utilizando un micrófono conectado a la entrada Mic 1, ajuste el
+interruptor a Mic 1. Si está utilizando un dispositivo tal como un reproductor de CD o muestreador
+conectado a la entrada auxiliar, coloque este interruptor en Line.
+
+[ ] 39.Nivel de micrófono 1/línea: Gire esta perilla para ajustar el nivel de la entrada Mic 1 o Aux.
+
+[ ] 40.Tono de micrófono 1/línea: Gire esta perilla para ajustar el tono de la entrada Mic 1 o Aux. Gírela a
+la izquierda para aumentar el tono de las frecuencias bajas o a la derecha para aumentar el tono de
+las frecuencias altas.
+
+[ ] 41.Volumen de cabina: Gire esta perilla para ajustar el volumen de la mezcla de la salida de cabina.
+
+[ ] 42.Volumen principal: Gire esta perilla para ajustar el volumen de la mezcla de la salida principal.
+
+
+Pantalla:
+
+[ ] 1.Bandeja activa: Indica la bandeja actualmente
+activa.
+
+[ ] 2.Posición del plato: Muestra la posición actual
+de la pista.
+
+[ ] 3.BPM: Muestra los BPM actuales de la pista
+actual.
+
+[ ] 4.Bloqueo de tonalidad: Este icono se enciende
+cuando el bloqueo de tonalidad se encuentra
+activado para la bandeja actual.
+
+[ ] 5.Rango de tono: muestra el rango de tono
+actual.
+
+[ ] 6.Pitch: muestra el tono actual de la pista.
+
+[ ] 7.Ajuste de tono (pitch): Indica la dirección en la
+cual mover el fader de tono para hacer coincidir
+los BPM de la pista actual con la pista en la
+bandeja opuesta.
+
+[ ] 8.Tiempo: Muestra el tiempo de reproducción
+transcurrido o el tiempo restante en la pista.
+
+[ ] 9.Tiempo restante (círculo blanco interno):
+proporciona una referencia visual del tiempo
+restante en la canción seleccionada. Cuando la
+canción esté casi terminada, estos segmentos
+parpadearán para dar una advertencia.
+
+
+Panel frontal:
+
+[ ] 1.Salida para auriculares: Conecte auriculares a estos conectores hembra de 6.35 mm (1/4 pulg.) y
+3.5 mm (1/8 pulg.) para monitorear la señal. El volumen de los auriculares se controla con la perilla
+cue gain.
+
+[ ] 2.Asignación del crossfader: Utilice estos interruptores para encaminar el audio que se reproduce en
+el canal correspondiente a cualquiera de los lados del crossfader (A o B) o puentea el crossfader y
+envía el audio directamente a la mezcla del programa (centro, apagado).
+
+[ ] 3.Entrada del Mic 2: Conecte un micrófono dinámico a la entrada de 6,35 mm (1/4 pulg.).
+
+[ ] 4.Nivel del Mic 2: Ajusta el nivel del volumen de la entrada Mic 2.
+
+[ ] 5.Tono del Mic 2: Gire esta perilla para ajustar el tono de la entrada Mic 2. Gírela a la izquierda para
+aumentar
+
+
+
+Panel trasero:
+
+[ ] 1.Botón de encendido: Pulse este botón para encender el NS4 FX. Encienda el NS4 FX después de
+haber conectado todos sus dispositivos de entrada y antes de encender sus amplificadores y
+altavoces.
+
+[ ] 2.Entrada de alimentación: Use el adaptador de alimentación incluido (12 V DC, 2 A, centro positivo)
+para conectar el NS4 FX a un tomacorriente alimentado. Mientras está desconectada la alimentación
+eléctrica, enchufe la fuente de alimentación al NS4 FX primero, y luego al tomacorriente.
+
+[ ] 3.Presilla del cable: Puede fijar un cable a esta presilla para evitar que se desenchufe accidentalmente.
+
+[ ] 4.USB: Utilice un cable USB (incluido) para conectar cada puerto USB a un puerto USB disponible en
+un ordenador. Este puerto envía datos USB MIDI para controlar diversos parámetros del software.
+
+[ ] 5.Salida principal (XLR): Utilices cables XLR estándar para conectar esta salida a un sistema de
+megafonía o monitores alimentados. El nivel de esta salida se controla mediante la perilla Main del
+panel superior.
+
+[ ] 6.Salida para cabina (RCA): Use cables RCA estándar para conectar esta salida a un sistema de
+monitoreo de cabina. El nivel de esta salida se controla con la perilla Booth del panel superior.
+
+[ ] 7.Entrada auxiliar: Conecte a estas entradas RCA un dispositivo de nivel de línea. Utilice los controles
+Mic 1/Line del panel superior para seleccionar esta entrada y ajustar su nivel y tono.
+
+[ ] 8.Entrada de micrófono 1: Conecte a esta entrada de 6,35 mm (1/4 pulg.) un micrófono dinámico
+estándar. Utilice los controles Mic 1/Line del panel superior para seleccionar esta entrada y ajustar su
+nivel y tono.
+
+
+
+Funcionamiento:
+
+........
