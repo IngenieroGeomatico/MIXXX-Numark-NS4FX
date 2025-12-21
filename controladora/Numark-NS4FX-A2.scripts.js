@@ -292,9 +292,11 @@ NS4FX.unshift = function() {
 NS4FX.allEffectOff = function() {
     NS4FX.effect[0].effects=[false, false, false];
     NS4FX.effect[1].effects=[false, false, false];
-    NS4FX.FxBlinkUpdateLEDs();
+    
     NS4FX.effect[0].updateEffects();
     NS4FX.effect[1].updateEffects();
+
+    NS4FX.FxBlinkUpdateLEDs();
 };
 
 NS4FX.allEffectOn = function() {
@@ -379,38 +381,92 @@ NS4FX.EffectUnit = function(deckNumber) {
     });
 
     this.effect1 = function(channel, control, value, status, _group) {
+        
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
+                print(`A_print 1, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
                 NS4FX.allEffectOn();
+                this.effects[0] = !this.effects[0];
+                midi.sendShortMsg(status, control, this.effects[0] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
+                this.updateEffects();
             } else{
-                
-                NS4FX.allEffectOff();
+                print('1 ----------------------------------------------------------------------------------------')
+                return
             }
-            this.effects[0] = !this.effects[0];
-            midi.sendShortMsg(status, control, this.effects[0] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
+            
         }
-
-
-        this.updateEffects();
+        
     };
+
+    this.effect1_shift = function(channel, control, value, status, _group) {
+        
+        if (value === 0x7F) {
+            if (!NS4FX.shifted) {
+                print('1 ----------------------------------------------------------------------------------------')
+                return
+            } else{
+                print(`A_print 1, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
+                NS4FX.allEffectOff();
+                this.effects[0] = !this.effects[0];
+                if (channel == 8){
+                    control = 0x00
+                } else if(channel == 9){
+                    control = 0x03
+                }else return
+                midi.sendShortMsg(status, control, this.effects[0] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
+                this.updateEffects();
+            }
+            
+        }
+        
+    };
+
 
 
     this.effect2 = function(channel, control, value, status, _group) {
         
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
+                print(`A_print 2, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
                 NS4FX.allEffectOn();
+                this.effects[1] = !this.effects[1];
+                midi.sendShortMsg(status, control, this.effects[1] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
+                this.updateEffects();
             } else{
-                NS4FX.allEffectOff();
+                print('2 ----------------------------------------------------------------------------------------')
+                return
             }
-            this.effects[1] = !this.effects[1];
-            midi.sendShortMsg(status, control, this.effects[1] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
+            
         }
+        
+    };
 
-        this.updateEffects();
+    this.effect2_shift = function(channel, control, value, status, _group) {
+        
+        if (value === 0x7F) {
+            if (!NS4FX.shifted) {
+                print('2 ----------------------------------------------------------------------------------------')
+                return 
+            } else{
+                print(`A_print 2, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
+                NS4FX.allEffectOff();
+                this.effects[1] = !this.effects[1];
+                if (channel == 8){
+                    control = 0x01
+                } else if(channel == 9){
+                    control = 0x04
+                }else return
+                
+                midi.sendShortMsg(status, control, this.effects[1] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
+                this.updateEffects();
+            }
+            
+        }
+        
     };
 
     this.effect3 = function(channel, control, value, status, _group) {
+        print(`A_print 3, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
                 NS4FX.allEffectOn();
@@ -420,7 +476,6 @@ NS4FX.EffectUnit = function(deckNumber) {
             this.effects[2] = !this.effects[2];
             midi.sendShortMsg(status, control, this.effects[2] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
         }
-
         this.updateEffects();
     };
 
@@ -935,6 +990,7 @@ NS4FX.PadSection = function(deckNumber) {
 
     // shifted leds
     midi.sendShortMsg(0x93 + deckNumber, 0x0F, ledOff); // sample2
+    midi.sendShortMsg(0x93 + deckNumber, 0x0E, ledOff); // auto loop 2
     midi.sendShortMsg(0x93 + deckNumber, 0x02, ledOff); // beatjump
 
     this.modes = {};
@@ -1371,6 +1427,16 @@ NS4FX.ModeFaderCuts = function(deckNumber, secondaryMode) {
         });
     }
     if (secondaryMode===false) {
+        i=0;
+        this.pads[0].disconnect();   // rompe conexiones
+        this.pads[0] = null;
+        this.pads[i] = new components.Button({
+            group: `[Channel${  deckNumber  }]`,
+            midi: [0x93 + deckNumber, 0x14 + i],
+            type: components.Button.prototype.types.toggle, // <-- mantiene estado al clicar
+            outConnect: false, // don't let hardware/firmware drive this pad's light/control
+            key: "loop_anchor",
+        });
         i=4;
         this.pads[i] = new components.Button({
             group: `[Channel${  deckNumber  }]`,
@@ -1788,6 +1854,15 @@ NS4FX.shiftToggle = function(channel, control, value, status, _group) {
         NS4FX.unshift();
     }
 };
+
+NS4FX.crossfader = function(channel, control, value, status) {
+
+    // aceptar solo un canal
+    if (status !== 0xB1) return;
+
+    engine.setValue("[Master]", "crossfader", value / 127);
+};
+
 
 NS4FX.deckSwitch = function(channel, control, value, _status, _group) {
     // Ignore the release the deck switch callback

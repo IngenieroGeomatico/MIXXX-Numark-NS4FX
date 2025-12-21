@@ -6,7 +6,7 @@
         <description>Mapping for the Numark NS4FX.</description>
         <forums>https://mixxx.discourse.group/t/numark-mixtrack-platinum-fx-mapping/19985</forums>
     </info>
-    <controller id="MixTrack">
+    <controller id="NS4FX">
         <scriptfiles>
             <file filename="lodash.mixxx.js" functionprefix=""/>
             <file filename="midi-components-0.0.js" functionprefix=""/>
@@ -95,6 +95,15 @@
                 </options>
             </control>
             <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>NS4FX.effect[0].effect1_shift</key>
+                <status>0x88</status>
+                <midino>0x01</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel1]</group>
                 <key>NS4FX.deck[0].playButton.input</key>
                 <status>0x90</status>
@@ -176,6 +185,15 @@
                 </options>
             </control>
             <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>NS4FX.effect[0].effect1_shift</key>
+                <status>0x98</status>
+                <midino>0x01</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <group>[Library]</group>
                 <key>MoveVertical</key>
                 <description>MIDI Learned from 1 messages.</description>
@@ -241,6 +259,15 @@
                 </options>
             </control>
             <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>NS4FX.effect[0].effect2_shift</key>
+                <status>0x88</status>
+                <midino>0x04</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel1]</group>
                 <key>NS4FX.deck[0].cueButton.input</key>
                 <status>0x90</status>
@@ -281,6 +308,15 @@
                 <key>NS4FX.effect[0].effect2</key>
                 <status>0x98</status>
                 <midino>0x01</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>NS4FX.effect[0].effect2_shift</key>
+                <status>0x98</status>
+                <midino>0x04</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -511,6 +547,15 @@
                 </options>
             </control>
             <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>NS4FX.effect[1].effect1_shift</key>
+                <status>0x89</status>
+                <midino>0x00</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel2]</group>
                 <key>NS4FX.deck[1].loadButton.input</key>
                 <status>0x8F</status>
@@ -560,6 +605,15 @@
                 <key>NS4FX.effect[1].effect1</key>
                 <status>0x99</status>
                 <midino>0x03</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>NS4FX.effect[1].effect1_shift</key>
+                <status>0x99</status>
+                <midino>0x00</midino>
                 <options>
                     <script-binding/>
                 </options>
@@ -637,6 +691,15 @@
                 </options>
             </control>
             <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>NS4FX.effect[1].effect2_shift</key>
+                <status>0x89</status>
+                <midino>0x03</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
                 <group>[Channel3]</group>
                 <key>NS4FX.deck[2].loadButton.input</key>
                 <status>0x8F</status>
@@ -686,6 +749,15 @@
                 <key>NS4FX.effect[1].effect2</key>
                 <status>0x99</status>
                 <midino>0x04</midino>
+                <options>
+                    <script-binding/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>NS4FX.effect[1].effect2_shift</key>
+                <status>0x99</status>
+                <midino>0x03</midino>
                 <options>
                     <script-binding/>
                 </options>
