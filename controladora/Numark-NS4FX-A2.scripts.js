@@ -601,6 +601,8 @@ NS4FX.Deck = function(number) {
         }
     };
 
+
+
     this.bpm = new components.Component({
         outKey: "bpm",
         output: function(value, group, _control) {
@@ -817,7 +819,13 @@ NS4FX.Deck = function(number) {
 
     this.filter = new components.Pot({
         group: `[QuickEffectRack1_${  this.currentDeck  }]`,
-        inKey: "super1"
+        // inKey: "super1",
+        shift: function() {
+            this.inKey = "chain_preset_selector";
+        },
+        unshift: function() {
+            this.inKey = "super1";
+        },
     });
 
     this.gain = new components.Pot({
@@ -1855,12 +1863,27 @@ NS4FX.shiftToggle = function(channel, control, value, status, _group) {
     }
 };
 
-NS4FX.crossfader = function(channel, control, value, status) {
+NS4FX.crossfader_ = function(channel, control, value, status, group) {
 
-    // aceptar solo un canal
-    if (status !== 0xB1) return;
+    center = 127/2
+    minNorm = -1
+    maxNorm = 1
+    min = 0
+    max = 127
+    valueNorm = (value-center)/(max-center)
 
-    engine.setValue("[Master]", "crossfader", value / 127);
+    engine.setValue(group, "crossfader", valueNorm);
+};
+
+NS4FX.orientation = function(_channel, _control, _value, _status, _group) {
+    if(_value == 0){
+        value = 1
+    } else if (_value == 1){
+        value = 0
+    } else{
+        value = _value
+    }
+    engine.setValue(_group, "orientation", value);
 };
 
 
