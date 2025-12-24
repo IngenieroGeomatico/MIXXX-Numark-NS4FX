@@ -387,13 +387,12 @@ NS4FX.EffectUnit = function(deckNumber) {
         
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
-                print(`A_print 1, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
+                // print(`A_print 1, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
                 NS4FX.allEffectOn();
                 this.effects[0] = !this.effects[0];
                 midi.sendShortMsg(status, control, this.effects[0] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
                 this.updateEffects();
             } else{
-                print('1 ----------------------------------------------------------------------------------------')
                 return
             }
             
@@ -405,10 +404,9 @@ NS4FX.EffectUnit = function(deckNumber) {
         
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
-                print('1 ----------------------------------------------------------------------------------------')
                 return
             } else{
-                print(`A_print 1, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
+                // print(`A_print 1, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
                 NS4FX.allEffectOff();
                 this.effects[0] = !this.effects[0];
                 if (channel == 8){
@@ -430,13 +428,12 @@ NS4FX.EffectUnit = function(deckNumber) {
         
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
-                print(`A_print 2, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
+                // print(`A_print 2, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
                 NS4FX.allEffectOn();
                 this.effects[1] = !this.effects[1];
                 midi.sendShortMsg(status, control, this.effects[1] ? NS4FX.HIGH_LIGHT : NS4FX.LOW_LIGHT);
                 this.updateEffects();
             } else{
-                print('2 ----------------------------------------------------------------------------------------')
                 return
             }
             
@@ -448,10 +445,9 @@ NS4FX.EffectUnit = function(deckNumber) {
         
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
-                print('2 ----------------------------------------------------------------------------------------')
                 return 
             } else{
-                print(`A_print 2, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
+                // print(`A_print 2, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
                 NS4FX.allEffectOff();
                 this.effects[1] = !this.effects[1];
                 if (channel == 8){
@@ -469,7 +465,7 @@ NS4FX.EffectUnit = function(deckNumber) {
     };
 
     this.effect3 = function(channel, control, value, status, _group) {
-        print(`A_print 3, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
+        // print(`A_print 3, channel: ${channel} ,control: ${control}, value: ${value} , status: ${status}, _group: ${_group}, NS4FX.shifted: ${NS4FX.shifted} `);
         if (value === 0x7F) {
             if (!NS4FX.shifted) {
                 NS4FX.allEffectOn();
