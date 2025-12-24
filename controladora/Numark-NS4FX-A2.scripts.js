@@ -370,6 +370,9 @@ NS4FX.EffectUnit = function(deckNumber) {
         engine.setValue("[EffectRack1_EffectUnit1]", `group_[Channel${  fxDeck  }]_enable`, (value !== 0));
         engine.setValue("[EffectRack1_EffectUnit2]", `group_[Channel${  fxDeck  }]_enable`, (value !== 0));
 
+        engine.setValue("[EffectRack1_EffectUnit1]", `group_[Microphone]_enable`, (value !== 0));
+        engine.setValue("[EffectRack1_EffectUnit2]", `group_[Microphone]_enable`, (value !== 0));
+
         this.updateEffects();
 
         NS4FX.FxBlink();
